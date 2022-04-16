@@ -216,7 +216,13 @@ export const EnemyFactionPage = () => {
                 onBlur={() => handleOnBlur(key)}
                 onChange={e => handleOnChange(key, e.target.value)} />
             ) : (
-              <Divider key={key}>{t(`enemyUnitTypes.${value}`)}</Divider>
+              <Divider key={key}>
+                <Typography
+                  fontWeight="bold"
+                  variant="body1">
+                  {t(`enemyUnitTypes.${value}`)}
+                </Typography>
+              </Divider>
             ),
           )}
         </Box>

@@ -23,7 +23,9 @@ import { darkTheme, lightTheme, getScrollbarStyles, FACTION_TYPES } from './cons
 
 export const App = () => {
   const [t] = useTranslation();
-  const [selectedFaction, setSelectedFaction] = useState(FACTION_TYPES.ENEMY);
+  const [selectedFaction, setSelectedFaction] = useState(
+    localStorage.getItem('trgm2-selected-faction') || FACTION_TYPES.ENEMY,
+  );
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [theme, setTheme] = useState(prefersDarkMode ? darkTheme : lightTheme);
   const [drawerOpen, setDrawerOpen] = useState(false);

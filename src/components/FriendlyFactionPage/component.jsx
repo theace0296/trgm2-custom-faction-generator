@@ -243,7 +243,13 @@ export const FriendlyFactionPage = () => {
                 unitValueErrors={unitValueErrors}
                 unitValues={unitValues} />
             ) : (
-              <Divider key={key}>{t(`friendlyUnitTypes.${value}`)}</Divider>
+              <Divider key={key}>
+                <Typography
+                  fontWeight="bold"
+                  variant="body1">
+                  {t(`friendlyUnitTypes.${value}`)}
+                </Typography>
+              </Divider>
             ),
           )}
         </Box>

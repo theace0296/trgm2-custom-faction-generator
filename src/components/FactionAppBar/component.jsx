@@ -25,6 +25,14 @@ export const FactionAppBar = ({ drawerOpen, setDrawerOpen, selectedFaction, setS
     setDrawerOpen(prev => !prev);
   }, [setDrawerOpen]);
 
+  const handleSetSelectedFactionOnClick = useCallback(
+    value => {
+      setSelectedFaction(value);
+      localStorage.setItem('trgm2-selected-faction', value);
+    },
+    [setSelectedFaction],
+  );
+
   return (
     <Box sx={{ width: '100%', display: 'flex' }}>
       <AppBar
@@ -75,7 +83,7 @@ export const FactionAppBar = ({ drawerOpen, setDrawerOpen, selectedFaction, setS
                 title={t(`${value}FactionPage`)}>
                 <ListItem
                   button
-                  onClick={() => setSelectedFaction(value)}>
+                  onClick={() => handleSetSelectedFactionOnClick(value)}>
                   <ListItemText primary={t(value)} />
                 </ListItem>
               </Tooltip>
