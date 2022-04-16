@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/trgm2-custom-faction-generator/static/css/main.a6371657.css",
+    "main.js": "/trgm2-custom-faction-generator/static/js/main.a3fa982c.js",
+    "static/js/808.73798fff.chunk.js": "/trgm2-custom-faction-generator/static/js/808.73798fff.chunk.js",
+    "index.html": "/trgm2-custom-faction-generator/index.html",
+    "main.a6371657.css.map": "/trgm2-custom-faction-generator/static/css/main.a6371657.css.map",
+    "main.a3fa982c.js.map": "/trgm2-custom-faction-generator/static/js/main.a3fa982c.js.map",
+    "808.73798fff.chunk.js.map": "/trgm2-custom-faction-generator/static/js/808.73798fff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6371657.css",
+    "static/js/main.a3fa982c.js"
+  ]
+}
