@@ -1,1 +1,1 @@
-# TRGM2 Custom Faction Data Generator
+# [TRGM2 Custom Faction Data Generator](https://theace0296.github.io/trgm2-custom-faction-generator/)
