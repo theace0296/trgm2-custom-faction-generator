@@ -1,0 +1,15 @@
+{
+  "short_name": "TRGM2 Custom Faction Generator",
+  "name": "TRGM2 Custom Faction Generator",
+  "icons": [
+    {
+      "src": "tcf.jpg",
+      "type": "image/jpg",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
