@@ -1,44 +1,5 @@
-import createTheme from '@mui/material/styles/createTheme';
-
-export const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-  overrides: {
-    MuiCssBaseline: {
-      '@global': {
-        '*': {
-          'scrollbar-width': 'thin',
-        },
-        '*::-webkit-scrollbar': {
-          width : '4px',
-          height: '4px',
-        },
-      },
-    },
-  },
-});
-
-export const lightTheme = createTheme({
-  palette: {
-    mode: 'light',
-  },
-  overrides: {
-    MuiCssBaseline: {
-      '@global': {
-        '*': {
-          'scrollbar-width': 'thin',
-        },
-        '*::-webkit-scrollbar': {
-          width : '4px',
-          height: '4px',
-        },
-      },
-    },
-  },
-});
-
 export const UNIT_DEFS = {
+  '~'                     : 'enemyUnits',
   sTeamleader             : 'Team Leader',
   sRifleman               : 'Rifleman',
   sATMan                  : 'AT Soldier',
@@ -63,7 +24,7 @@ export const UNIT_DEFS = {
   EnemyAirScout           : 'Air Scout Vehicles',
   UnarmedScoutVehicles    : 'Unarmed Scout Vehicles',
   EnemyBaseChoppers       : 'Attack Helicopters',
-  '~'                     : '~',
+  '~~'                    : 'militiaUnits',
   sTeamleaderMilitia      : 'Militia Team Leader',
   sRiflemanMilitia        : 'Militia Rifleman',
   sATManMilitia           : 'Militia AT Solider',
@@ -77,7 +38,7 @@ export const UNIT_DEFS = {
   sTank3TankMilitia       : 'Militia Tank',
   sAAAVehMilitia          : 'Militia AAA',
   sMortarMilitia          : 'Militia Mortar',
-  '~~'                    : '~',
+  '~~~'                   : 'missionObjectiveUnits',
   InformantClasses        : 'Informant HVTs',
   InterogateOfficerClasses: 'Officer HVTs',
   WeaponDealerClasses     : 'Arms Dealer HVTs',
@@ -86,7 +47,7 @@ export const UNIT_DEFS = {
   sideAmmoTruck           : 'Ammo Truck Targets',
   DestroyAAAVeh           : 'AAA Vehicle Targets',
   BombToDefuse            : 'Bomb Defusal Objects',
-  '~~~'                   : '~',
+  '~~~~'                  : 'civilianUnits',
   sRiflemanFriendInsurg   : 'Friendly Insurgent',
   sCivilian               : 'Civilians',
   CivCars                 : 'Civilian Cars',
